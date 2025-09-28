@@ -23,3 +23,12 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+// cypress/support/commands.js
+Cypress.Commands.add('loginCura', (user = 'John Doe', pass = 'ThisIsNotAPassword') => {
+  cy.get('#btn-make-appointment').should('be.visible').click();
+  cy.get('#txt-username').clear().type(user);
+  cy.get('#txt-password').clear().type(pass, { log: false });
+  cy.get('#btn-login').click();
+  cy.url().should('include', '#appointment');
+});
