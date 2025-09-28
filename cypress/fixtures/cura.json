@@ -1,0 +1,13 @@
+{
+  "baseUrl": "https://katalon-demo-cura.herokuapp.com/",
+  "user": "John Doe",
+  "pass": "ThisIsNotAPassword",
+  "facilities": [
+    "Tokyo CURA Healthcare Center",
+    "Hongkong CURA Healthcare Center",
+    "Seoul CURA Healthcare Center"
+  ],
+  "program": "medicare",
+  "locale": "en-GB",
+  "comment": "Automated test comment from fixture"
+}
