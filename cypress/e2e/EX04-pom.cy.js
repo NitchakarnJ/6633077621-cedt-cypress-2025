@@ -1,6 +1,6 @@
 const { LoginPage } = require('../page-objects/loginPage')
 const { HomePage }  = require('../page-objects/homePage')
-describe('Assignment 4 - Page Object Model (Static Methods)', () => {
+describe('Assignment 4', () => {
 
   it('Login with valid user', () => {
     LoginPage.visit()
